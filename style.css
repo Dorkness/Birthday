@@ -1,0 +1,169 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   background: url("https://cdn.shopify.com/s/files/1/0257/6718/2416/files/Party-Background-green-with-presents.jpg?v=1595051600") no-repeat center center fixed;
+   background-size: cover;
+ }
+ 
+ .container {
+   max-width: 800px;
+   margin: 50px auto;
+   text-align: center;
+ }
+ 
+ h1 {
+   color: #333;
+   font-size: 76px;
+   font-family: "Berkshire Swash", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .balloons-container {
+   margin-top: 20px;
+ }
+ 
+ .balloon {
+   display: inline-block;
+   width: 100px;
+   height: 110px;
+   font-size: 50px;
+   line-height: 70px;
+   border-radius: 50%;
+   box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.7);
+   background-color: #ff69b4;
+   color: #ffffff;
+   margin: 0 5px;
+   animation: balloonAnimation 5s ease-in-out infinite alternate;
+   font-family: "Berkshire Swash", serif;
+ }
+ 
+ @keyframes balloonAnimation {
+   0% {
+     transform: translateY(0);
+   }
+   100% {
+     transform: translateY(-20px);
+   }
+ }
+ 
+ .picture-space {
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .fiye-pic {
+   width: 300px;
+   
+   height: 300px;
+   border-radius: 50%;
+   margin: 10px 10px;
+   border: 3px solid #fff; 
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+   -webkit-animation: jello-horizontal 0.9s both;
+   animation: jello-horizontal 0.9s both;
+   
+ }
+
+ @-webkit-keyframes jello-horizontal {
+   0% {
+     -webkit-transform: scale3d(1, 1, 1);
+             transform: scale3d(1, 1, 1);
+   }
+   30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+             transform: scale3d(1.25, 0.75, 1);
+   }
+   40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+             transform: scale3d(0.75, 1.25, 1);
+   }
+   50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+             transform: scale3d(1.15, 0.85, 1);
+   }
+   65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+             transform: scale3d(0.95, 1.05, 1);
+   }
+   75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+             transform: scale3d(1.05, 0.95, 1);
+   }
+   100% {
+     -webkit-transform: scale3d(1, 1, 1);
+             transform: scale3d(1, 1, 1);
+   }
+ }
+ @keyframes jello-horizontal {
+   0% {
+     -webkit-transform: scale3d(1, 1, 1);
+             transform: scale3d(1, 1, 1);
+   }
+   30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+             transform: scale3d(1.25, 0.75, 1);
+   }
+   40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+             transform: scale3d(0.75, 1.25, 1);
+   }
+   50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+             transform: scale3d(1.15, 0.85, 1);
+   }
+   65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+             transform: scale3d(0.95, 1.05, 1);
+   }
+   75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+             transform: scale3d(1.05, 0.95, 1);
+   }
+   100% {
+     -webkit-transform: scale3d(1, 1, 1);
+             transform: scale3d(1, 1, 1);
+   }
+ }
+
+ .slide-message{
+   padding-left: 20px ;
+   margin-left: 20px;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: "Berkshire Swash", serif;
+ }
+ 
+ .balloon:nth-child(1) {
+   background-color: #e73d3d; 
+   animation-duration: 5s;
+ }
+ 
+ .balloon:nth-child(2) {
+   background-color: #1e90ff; /* Blue */
+   animation-duration: 6s;
+ }
+ 
+ .balloon:nth-child(3) {
+   background-color: #c507ff; 
+   animation-duration: 4s;
+ }
+ 
+ .balloon:nth-child(4) {
+   background-color: #4caf50; /* Green */
+   animation-duration: 4.5s;
+ }
+
+
+ @media (max-width: 768px) {
+   .picture-space {
+     flex-wrap: wrap;
+   }
+ 
+   .fiye-pic {
+     margin: 10px;
+   }
+ }
+ 
